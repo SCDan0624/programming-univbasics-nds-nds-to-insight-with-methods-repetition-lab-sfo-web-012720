@@ -5,7 +5,7 @@ def directors_totals(source)
   result = {}
   director_index = 0
   
-  while director_index < source.size do
+  while director_index < source.length do
     director = source[director_index]
     result[director[:name]] = gross_for_director(director)
     director_index += 1
@@ -32,7 +32,7 @@ def list_of_directors(source)
   index = 0
   
   while index < source.length do 
-    names.push(source[index][:name])
+     names << source[index][:name]
     index += 1
   end
   
